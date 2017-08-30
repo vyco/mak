@@ -1,0 +1,8 @@
+plugins:
+  - jekyll-seo-tag
+title: 'Mak | SouthSound'
+exclude:
+  - CNAME
+  - README
+  - design_old
+  - "*.jade"

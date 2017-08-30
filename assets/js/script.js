@@ -40,7 +40,12 @@ setTimeout(function(){
 setTimeout(function(){
 	$('.southSound-heading').css('display','block');
 },15100);
+setTimeout(function(){
+		$('.southSound-heading').css('display','none');
 
+	$('.out-now-heading').css('display','block');
+},17200);
 
 	});
+
 }

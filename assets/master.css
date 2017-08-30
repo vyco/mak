@@ -2910,3 +2910,27 @@ header {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177; }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177; } }
+
+.main-body {
+  background: black;
+  height: 100vh;
+  color: white; }
+  .main-body .lockup {
+    padding: 30px; }
+    .main-body .lockup h1 {
+      font-size: 100px;
+      padding: 0;
+      margin: 0;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+      letter-spacing: 20px; }
+    .main-body .lockup p {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #fff; }
+    .main-body .lockup .links {
+      font-size: 40px; }
+      .main-body .lockup .links .fa {
+        margin-right: 20px; }

@@ -45,7 +45,10 @@ setTimeout(function(){
 
 	$('.out-now-heading').css('display','block');
 },17200);
-
+setTimeout(function(){
+	$('header').fadeOut("slow");
+	$('.main-body').fadeIn("slow");
+},19000);
 	});
 
 }

@@ -1,23 +1,78 @@
 .main-body
-	background: black
-	height: 100vh
+	background: #010101
+	visibility: hidden
+
+
 	color: white
+	.headline
+		background: inherit
+	nav
+		.wrapper
+			margin-right: 100px
+		a
+			color: white
+			letter-spacing: 5px
+			text-transform: uppercase
+			text-decoration: none
+			padding: 40px
+			font-weight: 300
+			transition: .56s ease all
+			&:hover
+				font-weight: bold
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF
+
+	.pic
+		background: url('https://i.imgur.com/jiTU7KM.jpg')
+			size: cover
+			position: center center
+		width: 1300px
+		height: 100%
 	.lockup
-		padding: 30px
+		margin: 0 100px 0 100px
+		flex: 1
+		height: 100vh
+
+		h3
+			text-transform: uppercase
+			letter-spacing: 10px
+
 		h1
-			font-size: 100px
+			font-family: "Monoton",sans-serif
+			font-size: 150px
 			padding: 0
 			margin: 0
-			text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177
+			font-weight: 300
+
 			letter-spacing: 20px
+			font-style: italic
 		p
 			text-transform: uppercase
 			letter-spacing: 10px
 			font-size: 20px
 			text-align: center
-			font-weight: bold
+			font-weight: bolder
+
+			color: white
+			text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de
+
+
 			color: #fff
 		.links
-			font-size: 40px
+			font-size: 30px
+			margin-top: 20px
+
 			.fa
-				margin-right: 20px
+				margin: 0 60px 0 0
+				padding: 0
+				color: #999
+				transition: .56s ease all
+
+			.fa-spotify
+				&:hover
+					color: #1ED760
+			.fa-soundcloud
+				&:hover
+					color: #FF5500
+			.fa-youtube
+				&:hover
+					color: #FF0F0F

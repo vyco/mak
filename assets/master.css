@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
  * ========================================================================== */
@@ -2912,25 +2913,72 @@ header {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177; } }
 
 .main-body {
-  background: black;
-  height: 100vh;
+  background: #010101;
+  visibility: hidden;
   color: white; }
+  .main-body .headline {
+    background: inherit; }
+  .main-body nav .wrapper {
+    margin-right: 100px; }
+  .main-body nav a {
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 40px;
+    font-weight: 300;
+    -webkit-transition: .56s ease all;
+    -o-transition: .56s ease all;
+    transition: .56s ease all; }
+    .main-body nav a:hover {
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF; }
+  .main-body .pic {
+    background: url("https://i.imgur.com/jiTU7KM.jpg");
+      background-size: cover;
+      background-position: center center;
+    width: 1300px;
+    height: 100%; }
   .main-body .lockup {
-    padding: 30px; }
+    margin: 0 100px 0 100px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100vh; }
+    .main-body .lockup h3 {
+      text-transform: uppercase;
+      letter-spacing: 10px; }
     .main-body .lockup h1 {
-      font-size: 100px;
+      font-family: "Monoton",sans-serif;
+      font-size: 150px;
       padding: 0;
       margin: 0;
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-      letter-spacing: 20px; }
+      font-weight: 300;
+      letter-spacing: 20px;
+      font-style: italic; }
     .main-body .lockup p {
       text-transform: uppercase;
       letter-spacing: 10px;
       font-size: 20px;
       text-align: center;
-      font-weight: bold;
+      font-weight: bolder;
+      color: white;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
       color: #fff; }
     .main-body .lockup .links {
-      font-size: 40px; }
+      font-size: 30px;
+      margin-top: 20px; }
       .main-body .lockup .links .fa {
-        margin-right: 20px; }
+        margin: 0 60px 0 0;
+        padding: 0;
+        color: #999;
+        -webkit-transition: .56s ease all;
+        -o-transition: .56s ease all;
+        transition: .56s ease all; }
+      .main-body .lockup .links .fa-spotify:hover {
+        color: #1ED760; }
+      .main-body .lockup .links .fa-soundcloud:hover {
+        color: #FF5500; }
+      .main-body .lockup .links .fa-youtube:hover {
+        color: #FF0F0F; }

@@ -1,12 +1,21 @@
+var answer = '';
 $(document).ready(function(){
+
+
 	$('*').addClass('animated');
 	introAnimation();
 	musicControls();
+	mainBody();
+
+
 });
 function musicControls(){
 	document.getElementById("song").volume = 0.6;
 }
 function introAnimation(){
+
+
+
 $('.intro').addClass('fadeInDown');
 
 
@@ -48,7 +57,25 @@ setTimeout(function(){
 setTimeout(function(){
 	$('header').fadeOut("slow");
 	$('.main-body').fadeIn("slow");
+	$('.main-body').addClass('here');
+	$('.main-body').css('visibility','visible');
+	answer = "no";
+
 },19000);
 	});
 
+}
+function mainBody(){
+		$('.here > .wrapper > .animated').css('opacity','0');
+
+	$(window).scroll(function(){
+		var wscroll = $(this).scrollTop
+if(wscroll > $('.main-body').offset().top + 700)
+	$('.here > .wrapper > .animated').each(function(i){
+		setTimeout(function(){
+			$('.here > .wrapper > .animated').eq(i).addClass("fadeInUp")
+			$('.here > .wrapper > .animated').css('opacity','1');
+		},i*400);
+	});
+});
 }
